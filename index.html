@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria da Mata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Livraria da Mata</h1>
+        <p>A plataforma de desapego e troca de livros usados para estudantes.</p>
+        <nav>
+            <a href="index.html" id="link-inicio">Início</a>
+            <a href="login.html" id="link-login">Login</a>
+            
+            <div class="menu-container">
+                <a href="#" id="btn-sobre">Sobre ▼</a>
+                <div id="menu-vertical-sobre" class="menu-vertical">
+                    <a href="#" id="sublink-empresa">Empresa</a>
+                    <a href="#" id="sublink-clientes">Clientes</a>
+                </div>
+            </div>
+
+            <a href="cadastro.html" id="link-cadastro">Cadastre-se</a>
+
+            <div class="menu-container">
+                <a href="#" id="btn-contato">Contato ▼</a>
+                <div id="menu-vertical-contato" class="menu-vertical">
+                    <a href="#" id="sublink-telefone">Telefones</a>
+                    <a href="mailto:contato@livrariadamata.com?subject=Contato%20Livraria%20da%20Mata" id="sublink-email">E-mail (Outlook)</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bem-vindo à Livraria da Mata!</h1>
+            <p>A Livraria da Mata é uma plataforma criada para facilitar o desapego, a doação e a troca de livros usados entre estudantes. Aqui você pode cadastrar livros que não utiliza mais e encontrar outros leitores interessados em trocar ou receber esses livros.</p>
+            <p>Nosso objetivo é incentivar a leitura, facilitar o acesso aos livros e promover o reaproveitamento de materiais.</p>
+            <br>
+            <a href="cadastro.html" class="btn" id="btn-criar-conta">Cadastre-se e Participe Já</a>
+        </section>
+
+        <section>
+            <h2>Como funciona o Sebo Online?</h2>
+            <ul>
+                <li><strong>Cadastre:</strong> Faça o cadastro dos livros que você não usa mais.</li>
+                <li><strong>Doe ou Troque:</strong> Escolha se deseja doar ou trocar seu livro.</li>
+                <li><strong>Conecte-se:</strong> Combine a entrega diretamente com outros leitores.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Prévias dos Livros Disponíveis</h2>
+            <p>Veja alguns dos livros disponíveis na nossa plataforma.</p>
+            <article>
+                <h3>Peter Pan</h3>
+                <p><strong>Modalidade:</strong> Doação</p>
+                <p><strong>Estado:</strong> Bom estado</p>
+                <button class="btn-detalhes">Faça login para ver os detalhes</button>
+            </article>
+            <article>
+                <h3>Diário de um Banana</h3>
+                <p><strong>Modalidade:</strong> Troca</p>
+                <p><strong>Estado:</strong> Usado / Velho</p>
+                <button class="btn-detalhes">Faça login para ver os detalhes</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: João Oliveira e Henrique da Mata</p>
+        <p>Data Atual: <span id="data-atual"></span> | Todos os direitos reservados. Livraria da Mata &copy; 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

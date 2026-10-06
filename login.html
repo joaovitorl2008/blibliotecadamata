@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Livraria da Mata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Livraria da Mata</h1>
+        <p>A plataforma de desapego e troca de livros usados para estudantes.</p>
+        <nav>
+            <a href="index.html" id="link-inicio">Início</a>
+            <a href="login.html" id="link-login">Login</a>
+            
+            <div class="menu-container">
+                <a href="#" id="btn-sobre">Sobre ▼</a>
+                <div id="menu-vertical-sobre" class="menu-vertical">
+                    <a href="#" id="sublink-empresa">Empresa</a>
+                    <a href="#" id="sublink-clientes">Clientes</a>
+                </div>
+            </div>
+
+            <a href="cadastro.html" id="link-cadastro">Cadastre-se</a>
+
+            <div class="menu-container">
+                <a href="#" id="btn-contato">Contato ▼</a>
+                <div id="menu-vertical-contato" class="menu-vertical">
+                    <a href="#" id="sublink-telefone">Telefones</a>
+                    <a href="mailto:contato@livrariadamata.com?subject=Contato%20Livraria%20da%20Mata" id="sublink-email">E-mail (Outlook)</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Login Livraria da Mata</h2>
+            <p>Insira seu e-mail e senha cadastrados para entrar na plataforma.</p>
+            
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required placeholder="Digite sua senha">
+                </div>
+                
+                <button type="submit">Entrar</button>
+                <a href="index.html" class="btn">Voltar</a>
+            </form>
+            <br>
+            <a href="cadastro.html">Ainda não tem uma conta? Clique aqui para se cadastrar.</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: João Oliveira e Henrique da Mata</p>
+        <p>Data Atual: <span id="data-atual"></span> | Todos os direitos reservados. Livraria da Mata &copy; 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

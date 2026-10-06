@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebo Online - Livraria da Mata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sebo Acadêmico</h1>
+        <p>Usuário Conectado: <strong>Aluno Logado</strong></p>
+        <nav>
+            <a href="index.html" id="link-inicio">Início</a>
+            <a href="login.html" id="link-login">Login</a>
+            
+            <div class="menu-container">
+                <a href="#" id="btn-sobre">Sobre ▼</a>
+                <div id="menu-vertical-sobre" class="menu-vertical">
+                    <a href="#" id="sublink-empresa">Empresa</a>
+                    <a href="#" id="sublink-clientes">Clientes</a>
+                </div>
+            </div>
+
+            <a href="cadastro.html" id="link-cadastro">Cadastre-se</a>
+
+            <div class="menu-container">
+                <a href="#" id="btn-contato">Contato ▼</a>
+                <div id="menu-vertical-contato" class="menu-vertical">
+                    <a href="#" id="sublink-telefone">Telefones</a>
+                    <a href="mailto:contato@livrariadamata.com?subject=Contato%20Livraria%20da%20Mata" id="sublink-email">E-mail (Outlook)</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Desapegar de um Livro</h2>
+            <p>Preencha os dados abaixo para disponibilizar seu livro para doação ou troca na comunidade:</p>
+            <form id="formLivroSebo">
+                <div class="form-group">
+                    <label for="nomeLivro">Nome do Livro:</label>
+                    <input type="text" id="nomeLivro" required placeholder="Digite o nome do livro">
+                </div>
+                <div class="form-group">
+                    <label for="autorLivro">Autor:</label>
+                    <input type="text" id="autorLivro" required placeholder="Digite o nome do autor">
+                </div>
+                <div class="form-group">
+                    <label for="estadoLivro">Estado de Conservação:</label>
+                    <select id="estadoLivro" required>
+                        <option value="">Selecione o estado</option>
+                        <option value="Novo / Excelente">Novo / Excelente</option>
+                        <option value="Bom estado">Bom estado</option>
+                        <option value="Usado / Velho">Usado / Velho</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modalidadeLivro">Intenção (Modalidade):</label>
+                    <select id="modalidadeLivro" required>
+                        <option value="">Selecione a intenção</option>
+                        <option value="Troca">Quero Trocar</option>
+                        <option value="Doação">Quero Doar</option>
+                        <option value="Ambos">Aceito Troca ou Doação</option>
+                    </select>
+                </div>
+                <button type="submit">Anunciar Livro</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Livros Disponíveis na Comunidade</h2>
+            <p>Veja o que os outros alunos estão desapegando:</p>
+
+            <div id="containerLivrosSebo">
+                <article>
+                    <h3>Diário de um Banana</h3>
+                    <ul>
+                        <li><strong>Modalidade:</strong> Doação</li>
+                        <li><strong>Autor:</strong> Jeff Kinney</li>
+                        <li><strong>Estado:</strong> Usado / Velho</li>
+                        <li><strong>Dono(a):</strong> Gabriel Melo</li>
+                    </ul>
+                    <button type="button" class="btn-interesse" data-livro="Diário de um Banana">Tenho Interesse</button>
+                </article>
+
+                <article>
+                    <h3>Peter Pan</h3>
+                    <ul>
+                        <li><strong>Modalidade:</strong> Troca</li>
+                        <li><strong>Autor:</strong> J. M. Barrie</li>
+                        <li><strong>Estado:</strong> Bom estado</li>
+                        <li><strong>Dono(a):</strong> Gabriel Netto</li>
+                    </ul>
+                    <button type="button" class="btn-interesse" data-livro="Peter Pan">Propor Troca</button>
+                </article>
+
+                <article>
+                    <h3>O Pequeno Príncipe</h3>
+                    <ul>
+                        <li><strong>Modalidade:</strong> Doação</li>
+                        <li><strong>Autor:</strong> Antoine de Saint-Exupéry</li>
+                        <li><strong>Estado:</strong> Bom estado</li>
+                        <li><strong>Dono(a):</strong> Milena Abreu</li>
+                    </ul>
+                    <button type="button" class="btn-interesse" data-livro="O Pequeno Príncipe">Tenho Interesse</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: João Oliveira e Henrique da Mata</p>
+        <p>Data Atual: <span id="data-atual"></span> | Todos os direitos reservados. Livraria da Mata &copy; 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
